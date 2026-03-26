@@ -84,8 +84,21 @@ setupSocket(io);
 
 const PORT = process.env.PORT || 5000;
 
+process.on("uncaughtException", (err) => {
+  console.error("Uncaught Exception:", err);
+});
+
+process.on("unhandledRejection", (err) => {
+  console.error("Unhandled Rejection:", err);
+});
+
 const start = async () => {
+  console.log("Starting server...");
+
   await connectDB();
+
+  console.log("MongoDB connected");
+
 
   const redis = getRedisClient();
   if (redis) {
