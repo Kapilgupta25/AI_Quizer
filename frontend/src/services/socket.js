@@ -7,7 +7,10 @@ export const getSocket = () => {
   if (!socket || !socket.connected) {
     const token = useAuthStore.getState().accessToken;
 
-    socket = io('/', {
+    const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || '/';
+
+
+    socket = io(SOCKET_URL,{
       auth: { token },
       transports: ['websocket'],
       reconnectionAttempts: 5,

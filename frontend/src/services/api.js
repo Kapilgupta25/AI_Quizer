@@ -42,7 +42,7 @@ api.interceptors.response.use(
         const { refreshToken, setTokens, logout } = useAuthStore.getState();
         if (!refreshToken) throw new Error('No refresh token');
 
-        const { data } = await axios.post('/api/auth/refresh', { refreshToken });
+        const { data } = await axios.post(`${API_BASE_URL}/api/auth/refresh`, { refreshToken });
         setTokens(data.accessToken, data.refreshToken);
 
         refreshQueue.forEach(({ resolve, config }) => {
