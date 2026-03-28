@@ -4,7 +4,7 @@ AI_Quizer is a full-stack multiplayer quiz platform that generates topic-based q
 
 ## Live Demo
 
-Deployment Link: `https://ai-quizer-g14x.onrender.com/`
+Deployment Link: https://ai-quizer-g14x.onrender.com/
 
 ## Overview
 
