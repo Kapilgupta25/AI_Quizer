@@ -4,13 +4,7 @@ AI_Quizer is a full-stack multiplayer quiz platform that generates topic-based q
 
 ## Live Demo
 
-Deployment Link: `Add your live deployment URL here`
-
-Example:
-
-```text
-https://your-ai-quizer-app.vercel.app
-```
+Deployment Link: `https://ai-quizer-g14x.onrender.com/`
 
 ## Overview
 
